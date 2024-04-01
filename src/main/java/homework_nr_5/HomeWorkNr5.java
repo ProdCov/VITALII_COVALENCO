@@ -1,6 +1,8 @@
 package homework_nr_5;
 // The task did not include the option to create psvm
 public class HomeWorkNr5 {
+    public static void main(String[] args) {
+
         int sum = 0;
         long multi = 1;
 
@@ -26,7 +28,7 @@ public class HomeWorkNr5 {
         int sum2 = 0;
         long multi2 = 1;
         int[] numbers2 = new int[101]; //Заполните его числами от 100 до 0
-        int[] copyNumbers2 = new int[100];
+        int[] copyNumbers2 = new int[101];
         for (int i = 0; i < numbers2.length; i++) {
             numbers2[i] = 100 - i;
             copyNumbers2[i] = numbers2[i]; //Clone allay numbers
@@ -43,3 +45,4 @@ public class HomeWorkNr5 {
         System.out.println(multi2);
 
     }
+}

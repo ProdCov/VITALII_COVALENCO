@@ -14,7 +14,7 @@ public class HomeWorkNr5 {
             if (numbers[i] % 2 == 0) {
                 sum += numbers[i]; // Sum of even numbers
             }
-            if (numbers[i] % 2 == 1) {
+            else {
                 multi *= numbers[i]; //Product of odd numbers
 
             }
@@ -35,7 +35,7 @@ public class HomeWorkNr5 {
             if (numbers2[i] % 2 == 0) {
                 sum2 += numbers2[i]; // Sum of even numbers
             }
-            if (numbers2[i] % 2 == 1) {
+            else {
                 multi2 *= numbers2[i]; //Product of odd numbers
 
             }

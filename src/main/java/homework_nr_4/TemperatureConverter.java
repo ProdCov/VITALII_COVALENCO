@@ -1,8 +1,9 @@
 package homework_nr_4;
+
 import java.util.Scanner;
 
 public class TemperatureConverter {
-
+    
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         System.out.println("Choose type of degrees");
@@ -10,7 +11,7 @@ public class TemperatureConverter {
         String typeOfDegrees = userInput.next();
         System.out.print("Indicate value of degrees: ");
         float valueOfDegrees = userInput.nextFloat();
-        switch (typeOfDegrees){
+        switch (typeOfDegrees) {
             case "f":
                 toCelsius(valueOfDegrees);
                 break;
@@ -22,18 +23,19 @@ public class TemperatureConverter {
                 break;
             default:
                 System.out.println("The wrong type of degrees.");
-
+            
         }
-
+        
     }
-    static void toCelsius(float x){
-    float fahrenheitDegrees = (x - 32) * 5 / 9 ;
+    
+    static void toCelsius(float x) {
+        float fahrenheitDegrees = (x - 32) * 5 / 9;
         System.out.println("It is " + fahrenheitDegrees + " degrees in Fahrenheit!");
     }
-
-    static void toFahrenheit(float x){
-    float celsiusDegrees = (x * 9 / 5) + 32;
+    
+    static void toFahrenheit(float x) {
+        float celsiusDegrees = (x * 9 / 5) + 32;
         System.out.println("It is " + celsiusDegrees + " degrees in Celsius!");
-
+        
     }
 }

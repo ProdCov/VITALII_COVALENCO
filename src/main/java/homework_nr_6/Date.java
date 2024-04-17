@@ -4,25 +4,25 @@ public class Date {
     private int day;
     private int month;
     private int year;
-
+    
     public Date(int year, int month, int day) {
         this.day = day;
         this.month = month;
         this.year = year;
     }
-
+    
     public int getYear() {
         return year;
     }
-
+    
     public void setYear(int year) {
         this.year = year;
     }
-
+    
     public int getMonth() {
         return month;
     }
-
+    
     public void setMonth(int month) {
         if (month > 0) {
             if (month <= 12) {
@@ -32,11 +32,11 @@ public class Date {
             }
         }
     }
-
+    
     public int getDay() {
         return day;
     }
-
+    
     public void setDay(int day) {
         switch (getMonth()) {
             case 1, 3, 5, 7, 8, 10, 12:
@@ -59,11 +59,12 @@ public class Date {
                     this.day = day;
                 }
         }
-
+        
     }
-    public void displayDate(){
+    
+    public void displayDate() {
         String getDate = Integer.toString(getDay()) + '.' + Integer.toString(getMonth()) + '.' + Integer.toString(getYear());
         System.out.println(getDate);
-
+        
     }
 }

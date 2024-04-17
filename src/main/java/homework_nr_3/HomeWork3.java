@@ -6,7 +6,7 @@ public class HomeWork3 {
         switch (x) {
             case 1:
                 System.out.println("January");
-            break;
+                break;
             case 2:
                 System.out.println("February");
                 break;
@@ -42,32 +42,32 @@ public class HomeWork3 {
                 break;
             default:
                 System.out.println("In our universe there is no such month");
-    }
+        }
         System.out.println("--------------");
-    for(int y = 100; y<=1000; y+=5) {
+        for (int y = 100; y <= 1000; y += 5) {
             System.out.println(y);
-    }
-
+        }
+        
         System.out.println("--------------");
         double z = 1;
         double y = 3;
         double total = 0D;
-
-        while(y<=97){
-            total +=z/y;
-            z=y;
-            y+=2;
+        
+        while (y <= 97) {
+            total += z / y;
+            z = y;
+            y += 2;
         }
         System.out.println("Method 1 :" + total);
         System.out.println("--------------");
         double sum = 0D;
-        for (double c=1,v=3; v<=97; v+=2){
-            sum+=c/v;
-            c=v;
+        for (double c = 1, v = 3; v <= 97; v += 2) {
+            sum += c / v;
+            c = v;
         }
         System.out.println("Method 2 :" + sum);
-
+        
     }
-
+    
 }
 

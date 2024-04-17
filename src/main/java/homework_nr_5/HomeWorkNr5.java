@@ -1,11 +1,12 @@
 package homework_nr_5;
+
 // The task did not include the option to create psvm
 public class HomeWorkNr5 {
     public static void main(String[] args) {
-
+        
         int sum = 0;
         long multi = 1;
-
+        
         int[] numbers = new int[100]; //Создайте массив типа int с именем numbers и количество элементов 100
         int[] copyNumbers = new int[100];
         for (int i = 0; i < numbers.length; i++) {
@@ -13,17 +14,16 @@ public class HomeWorkNr5 {
             copyNumbers[i] = numbers[i]; //Clone allay numbers
             if (numbers[i] % 2 == 0) {
                 sum += numbers[i]; // Sum of even numbers
-            }
-            else {
+            } else {
                 multi *= numbers[i]; //Product of odd numbers
-
+                
             }
             System.out.println(numbers[i]);
         }
         System.out.println(sum);
         System.out.println(multi);
-
-
+        
+        
         System.out.println("----------------");
         int sum2 = 0;
         long multi2 = 1;
@@ -34,15 +34,14 @@ public class HomeWorkNr5 {
             copyNumbers2[i] = numbers2[i]; //Clone allay numbers
             if (numbers2[i] % 2 == 0) {
                 sum2 += numbers2[i]; // Sum of even numbers
-            }
-            else {
+            } else {
                 multi2 *= numbers2[i]; //Product of odd numbers
-
+                
             }
             System.out.println(numbers2[i]);
         }
         System.out.println(sum2);
         System.out.println(multi2);
-
+        
     }
 }

@@ -14,4 +14,9 @@ public class GenericAirVehicle<T extends Vehicle & Flyable> {
         
         listOfFlyableVehicles.add(inputVehicle);
     }
+    
+    @Override
+    public String toString() {
+        return "List of flyable vehicles=" + listOfFlyableVehicles;
+    }
 }

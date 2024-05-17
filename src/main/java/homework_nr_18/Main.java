@@ -30,8 +30,8 @@ public class Main {
             t7.join();
             t8.join();
         } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
+             throw new RuntimeException(e);
+         }
         Thread t9 = new Thread(mondaysTasks::getAllTasks);
         Thread t10 = new Thread(mondaysTasks::getTaskCount);
         t9.start();

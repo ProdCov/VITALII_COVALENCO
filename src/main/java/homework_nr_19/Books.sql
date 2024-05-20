@@ -12,5 +12,8 @@ values('The Great Gatsby"','"F. Sco^ Fitzgerald"','1925-01-01' ,'"Classics"',3),
 ('"1984"','"George Orwell"','1949-01-01','"Science Ficnon"',2),
 ('"Pride and Prejudice"','"Jane Austen" ','1813-01-01' ,'"Romance"',4);
 
+insert into Books (name, author, date_of_publishing, genre, available_count)
+values('"Abracadabra and Alpacas: A Comical Queest to Start the Magic"','"David Blaine"','20240520','"Fantasy"',1);
+
 select *
 from Books;
